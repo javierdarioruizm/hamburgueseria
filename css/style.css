@@ -36,6 +36,7 @@ img {
 
 body {
 
+   
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
     }
@@ -75,18 +76,83 @@ body {
         font-size: 150%;
     }
 
+    header nav {
+        padding: var(--margingrid);
+    }
+
+    
+    header nav .hamburguesa {
+        cursor:pointer;
+                   }
+
+    header .hamburguesa {
+        float: right;
+    }
+
+    header .menu{
+        padding-top: 60px;
+        text-align: center;
+            }
+
+    header .menu a {
+        text-decoration:none;
+        display:block;
+        /*con display:block asi convertimos la linea en un boton */
+        padding: calc(var(--margingrid)*1.25);
+        color: #aaa;
+        border-bottom: 1px solid #aaa;
+    }
+
+    header .menu li:last-child a {
+        border: 0px;
+    }
+
+    header .menu .activo {
+        color: var(--colorprincipal);
+    }
+
+    header .logo {
+        float:left;
+        max-width: 100px;
+    }
+
+    header nav .hamburguesa div{
+        border-top: 2px solid #aaa;
+        margin-bottom: calc(var(--margingrid)*0.75);
+        width: 2em;
+    }
+
      /* Fin del header */
 
      /* media queries */
 
      @media(min-width: 768px) {
-        header .nav-top a span{
+        header .nav-top a span {
             display: inline;
             color: white;
         }
 
         header .nav-top a i {
             font-size: 120%;
+        }
+
+    @media(min-width: 1004px) {
+        header .hamburguesa {
+            display: none;
+        }
+
+        header .menu{
+            padding-top: 0px;
+            float: right;
+                } 
+        
+        header .menu li{
+            display:inline-block;
+        }
+
+        header .menu li a {
+            border: 0px;
+            padding: 0.5em calc(var(--margingrid)); 
         }
 
      }
