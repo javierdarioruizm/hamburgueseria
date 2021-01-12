@@ -47,3 +47,46 @@ body {
         margin: 0 auto;
 
     }
+
+    /* Inicio del header */
+    header .nav-top {
+        background-color: var(--colorsecundario);
+        padding: var(--margingrid) 0px;
+             /*ejemplo de recalculo padding: calc(var(--margingrid)*4) 0px;*/
+    
+            }
+
+
+    header .nav-top .container {
+        display:flex;
+        justify-content:space-around;
+        }
+
+    header .nav-top a{
+        color: var(--colorprincipal);
+        text-decoration:none;
+    }
+
+    header .nav-top a span{
+        display:none;
+    }
+
+    header .nav-top a i {
+        font-size: 150%;
+    }
+
+     /* Fin del header */
+
+     /* media queries */
+
+     @media(min-width: 768px) {
+        header .nav-top a span{
+            display: inline;
+            color: white;
+        }
+
+        header .nav-top a i {
+            font-size: 120%;
+        }
+
+     }
