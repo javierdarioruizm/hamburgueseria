@@ -1,0 +1,49 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/*
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Estamos definiendo variables que vamos a utilizar en todo el proyecto */
+:root {
+
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentesecundaria: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+
+}
+
+body {
+
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+    }
+
+    /*clase para encorsetar el contenido en pantalla*/
+
+    .container {
+        max-width: var(--anchomaximo);
+        margin: 0 auto;
+
+    }
