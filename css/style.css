@@ -237,8 +237,9 @@ footer  a:hover {
 
 /* le ponemos padding de seguridad a todas las secciones */
 main section {
-    padding: calc(var(--margingrid)*3) var(--margingrid) calc(var(--margingrid)*5) var(--margingrid);
+    padding: calc(var(--margingrid)*3) var(--margingrid);
 }
+
 
 
 main section h2{
@@ -310,30 +311,75 @@ main section p{
 }
 
 .fa-truck{
-    transform: rotateY(180); /* rotación del icono del camión */
+    transform: rotateY(18deg0); /* rotación del icono del camión */
 }
 
 /* Fin de Our Services */
 
+/* Inicio de About Us */
+
+main #aboutus .flex .column {
+    margin: var(--margingrid) 0;
+}
+
+main #aboutus .column h3{
+    font-weight:700;
+    font-size: 110%;
+}
+
+main #aboutus .column h4{
+    margin: 0.8em 0;
+    font-weight:700;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
+    transform: rotateZ(0deg);
+}
 
 
 
-/* Inicio Botón arriba */
+/* Fin de About Us */
+
+
+
+
+
+
+/* Inicio Flecha arriba */
 
 .flecha a {
     display: block;
     color: var(--colorprincipal);
     position: fixed;
-    bottom: 60px;
+    bottom: 5%;
     right: 15px;
     font-size: 300%;
     
 }
 
-/* Fin Botón arriba */
+/* Fin Flecha arriba */
 
 
-     /* Inicio de media queries */
+/* Inicio de media queries */
 
 
 @media(min-width: 600px) {
@@ -355,6 +401,19 @@ main section p{
         padding: var(--margingrid);
         }
 
+    main #aboutus .flex {
+        display: flex;
+    }
+
+    main #aboutus .imagen {
+        width: 80%;
+            
+    }
+
+    main #aboutus {
+        margin-bottom: 2em;
+    }
+
 }
 
 
@@ -375,8 +434,9 @@ main section p{
 
         main #ourservices .grid  {
         
-           grid-template-columns: repeat (3 , 1fr);
-            }
+           grid-template-columns: repeat(3, 1fr);
+           gap: var(--margingrid);
+        }
 
         main #ourservices .grid article:last-child{
                 grid-column: 3/4; 
@@ -384,29 +444,30 @@ main section p{
     }
 
       
-    @media(min-width: 1004px) {
-        header .hamburguesa {
+@media(min-width: 1004px) {
+        
+    header .hamburguesa {
             display: none;
         }
 
-        header .menu{
+    header .menu{
             padding-top: 0px;
             float: right;
                 } 
         
-        header .menu li{
+    header .menu li{
             display:inline-block;
         }
 
-        header .menu li a {
+    header .menu li a {
             border: 0px;
             padding: 0.5em calc(var(--margingrid)); 
         }
 
-        footer  {
+    footer  {
             text-align: left;
-        }
+}
 
-        /* Inicio de media queries */
+            }
 
-     }
+/* Fin de media queries */
