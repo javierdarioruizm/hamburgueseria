@@ -233,6 +233,50 @@ footer  a:hover {
 
 /* Fin del hero */
 
+/* Inicio de Our Services */
+
+/* le ponemos padding de seguridad a todas las secciones */
+main section {
+    padding: calc(var(--margingrid)*3) var(--margingrid);
+
+}
+
+main section h2{
+    color:black;
+    font-family:var(--fuentesecundaria);
+    font-size: 2em;
+    text-align:center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline{
+    position: relative;
+    width: 100px;
+    margin: 0 auto; /*para centrar divs en general */
+    text-align:center;
+    margin-bottom: var(--margingrid);
+}
+
+main section .underline hr{
+    position:absolute;
+    width:100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span{
+    color: var(--colorprincipal);
+    font-weight: 700; /* negrita de la fuente */
+}
+
+
+/* Fin de Our Services */
+
+
+
 
 /* Inicio Botón arriba */
 
@@ -246,12 +290,10 @@ footer  a:hover {
     
 }
 
-
-
 /* Fin Botón arriba */
 
 
-     /* media queries */
+     /* Inicio de media queries */
 
      @media(min-width: 768px) {
         header .nav-top a span {
