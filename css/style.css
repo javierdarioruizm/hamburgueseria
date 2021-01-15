@@ -358,7 +358,37 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
 
 /* Fin de About Us */
 
+
+
 /* Inicio de Sección Our Blog */
+
+
+/*llamo al id de la seccion Our Blog*/
+main #ourblog .grid {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: var(--margingrid);
+}
+
+main #ourblog .grid article {
+padding: calc(var(--margingrid)*2) 0;
+
+}
+
+main #ourblog .grid article h3 {
+    font-weight:700;
+    margin: var(--margingrid) 0;
+    font-size: 140%;
+}
+
+main #ourblog .grid article .postedby {
+   text-decoration:none; 
+    color: var(--colorprincipal);
+    font-weight: 700;
+    display:block;
+    margin: var(--margingrid) 0;
+    
+}
 
 /* Fin de Sección Our Blog */
 
@@ -433,6 +463,12 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
 
         main #ourservices .grid article:last-child{
                 grid-column: 3/4; 
+            }
+
+            main #ourblog .grid {
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                gap: var(--margingrid);
             }
     }
 
