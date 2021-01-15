@@ -84,13 +84,14 @@ body {
         padding: var(--margingrid);
     }
 
-    /* con esto conseguimos desplazar el hero hacia abajo
-    y evitamos el efecto float del nav */
+   
     header nav .container:after {
         display:block;
         content: "";
         clear: both;
         height:0;
+/* con esto conseguimos desplazar el hero hacia abajo
+    y evitamos el efecto float del nav */
 
     }
 
@@ -355,28 +356,20 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     transform: rotateZ(0deg);
 }
 
-
-
 /* Fin de About Us */
 
+/* Inicio de Sección Our Blog */
+
+/* Fin de Sección Our Blog */
 
 
 
 
 
-/* Inicio Flecha arriba */
 
-.flecha a {
-    display: block;
-    color: var(--colorprincipal);
-    position: fixed;
-    bottom: 5%;
-    right: 15px;
-    font-size: 300%;
-    
-}
 
-/* Fin Flecha arriba */
+
+
 
 
 /* Inicio de media queries */
@@ -471,3 +464,18 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
             }
 
 /* Fin de media queries */
+
+
+/* Inicio Flecha arriba */
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 5%;
+    right: 15px;
+    font-size: 300%;
+    
+}
+
+/* Fin Flecha arriba */
