@@ -410,7 +410,70 @@ main #ourblog .grid article .postedby {
 /* Fin de Sección Our Blog */
 
 
+/* Inicio de Sección Menu */
 
+main #paginamenu {
+    background-color: black;
+    color: white;
+    
+    
+}
+
+main #paginamenu .flex {
+    margin: calc(var(--margingrid)*3) 0;
+}
+
+main #paginamenu .flex .column1 {
+    padding: calc(var(--margingrid)*1.25);
+
+}
+
+main #paginamenu h2 {
+    color: white;
+}
+
+main #paginamenu h3{
+    font-weight:700;
+    font-size: 120%;
+    color: white;
+}
+
+main #paginamenu .underline2 hr{
+    margin: 20px 0;
+    position: relative;
+    left: 0px;
+    width:60px;
+    border-color: var(--colorprincipal);
+}
+
+
+main #paginamenu .breakfastmenu {
+    padding: calc(var(--margingrid)*1.25) 0;
+    
+    
+}
+
+main #paginamenu .breakfastmenu a {
+    text-decoration:none;
+    display:block;
+    padding: calc(var(--margingrid)*1.25);
+    color: white;
+    
+}
+
+main #paginamenu .breakfastmenu .activomenu {
+   
+    background-color:var(--colorprincipal);
+    border-radius: 5px;
+}
+
+main #paginamenu .breakfastmenu a:hover {
+    background-color:var(--colorprincipal);
+    border-radius: 5px;
+    
+}
+
+/* Fin de Sección Menu */
 
 
 
