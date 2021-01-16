@@ -30,7 +30,7 @@ img {
 
     --fuenteprincipal: 'Montserrat', sans-serif;
     --fuentesecundaria: 'Handlee', cursive;
-    --colorprincipal: rgb(250, 85, 56);
+    --colorprincipal: #fa5538;
     --colorsecundario: #21242e;
     --margingrid: 1em;
     --fontsize: 1em;
@@ -419,6 +419,10 @@ main #ourblog .grid article .postedby {
 
 
 
+
+
+
+
 /* Inicio de media queries */
 
 
@@ -482,11 +486,13 @@ main #ourblog .grid article .postedby {
                 grid-column: 3/4; 
             }
 
-            main #ourblog .grid {
+        main #ourblog .grid {
                 display:grid;
                 grid-template-columns:repeat(3, 1fr);
                 gap: var(--margingrid);
             }
+
+     
     }
 
       
