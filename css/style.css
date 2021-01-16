@@ -473,6 +473,26 @@ main #paginamenu .breakfastmenu a:hover {
     
 }
 
+main #paginamenu .flex .column2 {
+    padding: calc(var(--margingrid)*1.25);
+
+}
+
+main #paginamenu .flex .column2 article {
+    padding: calc(var(--margingrid)*1.25);
+
+}
+
+main #paginamenu .flex .column2 img {
+    padding: calc(var(--margingrid)*1.5) 0;
+
+}
+
+main #paginamenu .flex .column2 p {
+    padding: calc(var(--margingrid)*1.25) 0;
+
+}
+
 /* Fin de Sección Menu */
 
 
