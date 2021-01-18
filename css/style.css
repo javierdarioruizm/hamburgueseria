@@ -415,30 +415,28 @@ main #ourblog .grid article .postedby {
 main #paginamenu {
     background-color: black;
     color: white;
-    
-    
 }
 
 main #paginamenu .flex {
     margin: calc(var(--margingrid)*3) 0;
+    
 }
 
-main #paginamenu .flex .column1 {
+main #paginamenu .flex aside {
     padding: calc(var(--margingrid)*1.25);
-
 }
 
 main #paginamenu h2 {
     color: white;
 }
 
-main #paginamenu h3{
+main #paginamenu h3 {
     font-weight:700;
     font-size: 120%;
     color: white;
 }
 
-main #paginamenu .underline2 hr{
+main #paginamenu .underline2 hr {
     margin: 20px 0;
     position: relative;
     left: 0px;
@@ -449,8 +447,6 @@ main #paginamenu .underline2 hr{
 
 main #paginamenu .breakfastmenu {
     padding: calc(var(--margingrid)*1.25) 0;
-    
-    
 }
 
 main #paginamenu .breakfastmenu a {
@@ -470,38 +466,34 @@ main #paginamenu .breakfastmenu .activomenu {
 main #paginamenu .breakfastmenu a:hover {
     background-color:var(--colorprincipal);
     border-radius: 5px;
-    
 }
 
-main #paginamenu .flex .column2 {
-    padding: calc(var(--margingrid)*1.25);
-
+main #paginamenu .flex .platos {
+    padding: 0 calc(var(--margingrid)*1.25);
+            
 }
 
-main #paginamenu .flex .column2 article {
-    padding: calc(var(--margingrid)*1.25);
-
+main #paginamenu .flex .platos {
+    padding: 0 calc(var(--margingrid)*1.25);
 }
 
-main #paginamenu .flex .column2 img {
+main #paginamenu .flex .platos img {
     padding: calc(var(--margingrid)*1.5) 0;
-
 }
 
-main #paginamenu .flex .column2 p {
+main #paginamenu .flex .platos p {
     padding: calc(var(--margingrid)*1.25) 0;
 
 }
 
+main #paginamenu .flex .platos h3 span {
+    color: var(--colorprincipal);
+    padding: 0 10px;
+    
+
+}
+
 /* Fin de Sección Menu */
-
-
-
-
-
-
-
-
 
 
 
@@ -545,7 +537,8 @@ main #paginamenu .flex .column2 p {
 
 
 
-     @media(min-width: 768px) {
+@media(min-width: 768px) {
+        
         header .nav-top a span {
             display: inline;
             color: white;
@@ -575,8 +568,45 @@ main #paginamenu .flex .column2 p {
                 gap: var(--margingrid);
             }
 
-     
-    }
+        main #paginamenu .flex {
+            display: flex;
+            flex-wrap: wrap; 
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            
+        }
+
+        main #paginamenu .flex aside {
+            width: 25%;
+        }
+
+        main #paginamenu .flex .platos {
+            width: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: calc(var(--margingrid)*1.25) calc(var(--margingrid)*4);
+            
+            
+        }
+
+        main #paginamenu .flex .platos .columna1 {
+           width: 25%; 
+                    
+            
+        }
+
+        main #paginamenu .flex .platos .columna2 {
+            width: 75%; 
+            padding: calc(var(--margingrid)*1.25);   
+            
+        } 
+
+
+             
+        
+}
 
       
 @media(min-width: 1004px) {
